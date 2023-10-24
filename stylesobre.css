@@ -1,0 +1,312 @@
+/*
+Paleta de cores
+https://coolors.co/palette/22577a-38a3a5-57cc99-80ed99-c7f9cc
+https://coolors.co/palette/f8f9fa-e9ecef-dee2e6-ced4da-adb5bd-6c757d-495057-343a40-212529
+*/
+
+/*Estilos gerais*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+hr{
+    opacity: 10%;
+}
+
+button{
+    padding: 2.75vh 2.75vh;
+	border: 0;
+	border-radius: 5vh;
+	background-color: #80ED99;
+	color: black;
+	text-decoration: none;
+	font-weight: 700;
+	cursor: pointer;
+    font-size: 2.75vh;
+    transition: 0.75s;
+    margin-top: 4vh;
+}
+
+button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 4vh #80ED9970;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar{
+    width: 0.375em;
+    height: 0.375em;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #C7F9CC;
+}
+
+::-webkit-scrollbar-corner{
+    background-color: #080808;
+}
+
+/*Header*/
+header .container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+header .container .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 60px 4%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li{
+    margin: 0 25px;
+    font-size: 2.75vh;
+}
+
+header nav ul li:hover{
+    transition: 0.75s;
+}
+
+header nav ul li a{
+    transition: 0.75s;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header nav ul li a:hover{
+    color: #80ED99;
+    transform: scale(1.2);
+    transition: 0.75s;
+}
+
+.banner{
+    height: 100vh;
+    background: url(Imagens/campus.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h1{
+    color: white;
+    text-align: center;
+    font-size: 4rem;
+    text-shadow: 0.25em 0.25em 0.25em black;
+}
+
+.banner h1 span{
+    color: #80ED99;
+}
+
+/*Conteudo - Texto Principal*/
+
+.texto{
+    margin: 6vh 10vh;
+    font-size: 3vh;
+}
+
+.texto h2{
+    font-size: 7vh;
+    margin-bottom: 2.75vh;
+}
+
+.texto span{
+    color: #80ED99;
+}
+
+.texto .sobre{
+    text-align: center;
+}
+
+.texto .sobre h2{
+    margin-bottom: 2.75vh;
+}
+
+.texto .sobre p{
+    text-align: justify;
+    font-size: 3.16vh;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2.75vh;
+}
+
+.texto .sobre .pfinal{
+    margin-bottom: 10vh;
+}
+
+.texto .local{
+    max-width: 75%;
+    text-align: center;
+    align-items: center;
+    margin: 7vh auto;
+    border-width: 0.4vh;
+    border-style: solid;
+    border-color: #c8f9cd80;
+    border-radius: 15vh;
+    padding: 7vh;
+    transition: 0.75s;
+}
+
+.texto .local p{
+    max-width: 93%;
+    text-align: justify;
+    margin: auto auto;
+}
+
+.texto .local:hover{
+    box-shadow: 0 0 3vh #80ED99;
+    transform: scale(1.01);
+}
+
+.texto .inscricao{
+    max-width: 75%;
+    text-align: center;
+    align-items: center;
+    margin: 7vh auto;
+    border-width: 0.4vh;
+    border-style: solid;
+    border-color: #c8f9cd80;
+    border-radius: 15vh;
+    padding: 7vh;
+    transition: 0.75s;
+}
+
+.texto .inscricao p{
+    max-width: 93%;
+    text-align: justify;
+    margin: auto auto;
+}
+
+.texto .inscricao:hover{
+    box-shadow: 0 0 3vh #80ED99;
+    transform: scale(1.01);
+}
+
+.texto .instagram{
+    max-width: 75%;
+    text-align: center;
+    align-items: center;
+    margin: 7vh auto;
+    border-width: 0.4vh;
+    border-style: solid;
+    border-color: #c8f9cd80;
+    border-radius: 15vh;
+    padding: 7vh;
+    transition: 0.75s;
+}
+
+.texto .instagram p{
+    max-width: 93%;
+    text-align: justify;
+    margin: auto auto;
+}
+
+.texto .instagram:hover{
+    box-shadow: 0 0 3vh #80ED99;
+    transform: scale(1.01);
+}
+
+/*Footer*/
+
+footer{
+    height: 50vh;
+    background: url(Imagens/footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+footer .container{
+    padding: 10vh;
+    max-width: 150vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+footer h5{
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+footer .container ul{
+    list-style-type: none;
+}
+
+footer .container .realizacao img{
+    width: 6vh;
+}
+
+footer .desenvolvedores ul .baixo{
+    padding-top: 3vh;
+}
+
+footer .contato h5{
+    margin-top: 2vh;
+    line-height: 0.8;
+}
+
+footer .contato ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 1.25vh;
+}
+
+footer .contato .baixo{
+    justify-content: space-evenly;
+}
+
+footer .contato ul li{
+    margin: 0 0.75vh;
+    align-items: center;
+    display: block;
+    transition: 0.75s;
+}
+
+footer .contato ul li:hover{
+    transform: scale(1.2);
+}
+
+footer .contato img{
+    width: 4vh;
+    height: auto;
+}
+
+footer .copy{
+    text-align: center;
+}
